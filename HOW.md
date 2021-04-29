@@ -39,3 +39,8 @@ Notes:
 > This migration will need to be run on the application(add_author_id_to_blorgh_articles). To do that, it must first be copied using this command:
 
     bin/rails blorgh:install:migrations
+
+> The next step is to make the class that represents a User in the application customizable for the engine.
+
+    - Create an inizializer: config/initializers/blorgh.rb
+        Blorgh.author_class = "User"
